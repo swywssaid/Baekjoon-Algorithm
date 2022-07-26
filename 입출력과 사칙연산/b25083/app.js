@@ -5,12 +5,16 @@ let input = fs
   .split("\n");
 
 function solution() {
-  console.log(`           ,r'"7
-  r\`-_   ,'  ,/
-   \\. ". L_r'
-     \`~\\/
-        |
-        |
-  `);
+  console.log(`         ,r'"7
+r\`-_   ,'  ,/
+ \\. ". L_r'
+   \`~\\/
+      |
+      |
+`);
+
+  // console.log(
+  //   "         ,r'\"7\nr`-_   ,'  ,/\n \\. \". L_r'\n   `~\\/\n      |\n      |"
+  // );
 }
 solution();
