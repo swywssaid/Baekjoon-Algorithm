@@ -3,6 +3,7 @@ const input = fs
   .readFileSync(__dirname + "/input.txt") // boj: '/dev/stdin'
   .toString()
   .split("\n");
+let answer = "";
 
 function solution() {
   for (let i = 0; ; i++) {
@@ -11,8 +12,9 @@ function solution() {
     if (numA == 0) {
       break;
     }
-    console.log(numA + numB);
+    answer += `${numA + numB}\n`;
   }
+  console.log(answer);
 }
 
 solution();
