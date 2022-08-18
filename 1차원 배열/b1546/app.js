@@ -1,8 +1,7 @@
 const fs = require("fs");
 let input = fs
-  .readFileSync(__dirname + "/input.txt")
+  .readFileSync(__dirname + "/input.txt") // boj: '/dev/stdin'
   .toString()
-  .trim()
   .split("\n");
 
 const num = input[0] * 1;
