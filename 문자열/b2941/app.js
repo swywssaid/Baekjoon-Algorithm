@@ -6,7 +6,8 @@ let input = fs
 input = input[0];
 
 function solution() {
-  console.log(input);
+  const pattern = /c=|c-|dz=|d-|lj|nj|s=|z=|[a-z]/g;
+  console.log(input.match(pattern).length);
 }
 
 solution();
