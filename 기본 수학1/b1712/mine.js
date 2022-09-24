@@ -5,11 +5,8 @@ let input = fs
   .split("\n");
 input = input[0].split(" ").map((x) => Number(x));
 function solution(input) {
-  for (let i = 1; ; i++) {
-    if (input[0] + input[1] * i < input[2] * i) {
-      return console.log(i);
-    }
-  }
+  let answer = input[1] < input[2] ? input[0] / (input[2] - input[1]) : -2;
+  answer = answer % 1 === 0 ? ++answer : Math.ceil(answer);
+  console.log(answer);
 }
-
 solution(input);
